@@ -146,7 +146,7 @@ Android safety app with 5+ emergency-response modules for rapid incident handlin
 ## 📈 Contribution Snake
 
 <div align="center">
-## 🐍 My Contributions
+ 🐍 My Contributions
 
 ![GitHub Contribution Snake](https://raw.githubusercontent.com/tejashr94/tejashr94/output/github-contribution-grid-snake.svg)
 </div>
