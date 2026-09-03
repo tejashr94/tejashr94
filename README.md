@@ -1,256 +1,167 @@
-# 👋 Hi, I'm Tejash Rai
+<div align="center">
 
-### 💻 Computer Science & Engineering Student | Full-Stack Developer | Android Developer
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6a11cb,100:2575fc&height=220&section=header&text=Hi%20There,%20I'm%20Tejash%20Rai%20👋&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Full%20Stack%20%7C%20Android%20%7C%20MERN%20Developer&descAlignY=55&descSize=18"/>
 
-![Profile Views](https://komarev.com/ghpvc/?username=tejashr94&label=Profile%20Views&color=0e75b6&style=flat)
+<a href="https://linkedin.com/in/tejashrai"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+<a href="mailto:tejashr94@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+<a href="https://github.com/tejashr94"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
 
-I'm a Computer Science and Engineering student at **Lovely Professional University**, passionate about software development, problem solving, and building real-world applications.
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&duration=3000&pause=800&color=2575FC&center=true&vCenter=true&multiline=true&repeat=true&width=850&height=100&lines=B.Tech+CSE+Student+%40+Lovely+Professional+University;MERN+Stack+%7C+Android+(Kotlin)+%7C+Real-time+Systems;Building+PlentyBridge+%F0%9F%8C%B1+and+SakhiShield+%F0%9F%9B%A1%EF%B8%8F;Always+learning%2C+always+shipping+%F0%9F%9A%80" alt="Typing SVG" />
 
-I enjoy working across **Full-Stack Web Development, Android Development, and Data Structures & Algorithms** while continuously learning and exploring new technologies.
+![Profile Views](https://komarev.com/ghpvc/?username=tejashr94&color=2575fc&style=for-the-badge&label=PROFILE+VIEWS)
+![GitHub followers](https://img.shields.io/github/followers/tejashr94?style=for-the-badge&color=6a11cb&labelColor=black)
 
----
+</div>
+
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.gif" width="100%">
 
 ## 🚀 About Me
 
-- 🎓 B.Tech in **Computer Science & Engineering**
-- 🏫 Lovely Professional University
-- 📊 **CGPA: 9.25**
-- 💻 Interested in **Full-Stack Development, Android Development & DSA**
-- 🧠 Passionate about **Problem Solving**
-- 🚀 Building practical and real-world applications
-- 🌱 Continuously learning new technologies
-- 🪖 NCC **A Certificate** holder
-- 🤝 Interested in technology, innovation and impactful projects
+```yaml
+name: Tejash Rai
+role: B.Tech CSE Student @ Lovely Professional University
+cgpa: 9.25
+location: Phagwara, Punjab, India
+focus: Full-Stack Web Development • Android Development • Real-Time Systems
+currently_building:
+  - PlentyBridge — real-time surplus food redistribution platform (MERN)
+  - SakhiShield — Android safety app with live geolocation & SOS alerts
+soft_skills: [Problem-Solving, Leadership, Resilience, Time Management, Learning Agility]
+fun_fact: "I turn ideas into APIs faster than coffee gets cold ☕"
+```
 
----
+<br>
 
-# 🛠️ Tech Stack
+## 🛠️ Tech Arsenal
 
-## 👨‍💻 Programming Languages
+<div align="center">
 
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-![C](https://img.shields.io/badge/C-3949AB?style=for-the-badge&logo=c&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)
-![XML](https://img.shields.io/badge/XML-0060A8?style=for-the-badge&logo=xml&logoColor=white)
+**Languages**
 
-## 🌐 Web Development
+<img src="https://skillicons.dev/icons?i=cpp,py,c,java,js,kotlin,xml&theme=dark" />
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![React](https://img.shields.io/badge/React.js-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
-![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+**Frameworks & Libraries**
 
-## 📱 Android Development
+<img src="https://skillicons.dev/icons?i=html,css,react,nextjs,nodejs,express,tailwind&theme=dark" />
 
-![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
-![Android Studio](https://img.shields.io/badge/Android_Studio-3DDC84?style=for-the-badge&logo=android-studio&logoColor=white)
-![Jetpack Compose](https://img.shields.io/badge/Jetpack_Compose-4285F4?style=for-the-badge&logo=jetpackcompose&logoColor=white)
-![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)
+**Databases & Platforms**
 
-## 🗄️ Databases & Platforms
+<img src="https://skillicons.dev/icons?i=mongodb,mysql,postgres,firebase,supabase&theme=dark" />
 
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
-![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=for-the-badge&logo=supabase&logoColor=white)
+**Tools**
 
----
+<img src="https://skillicons.dev/icons?i=git,github,androidstudio,vscode,postman,figma&theme=dark" />
 
-# 📌 Featured Projects
+</div>
 
-## 🌉 PlentyBridge
+<br>
 
-**MERN Stack | MongoDB Atlas | Leaflet | Socket.IO | REST APIs | Geolocation**
+## 📊 GitHub Stats
 
-A real-time surplus food redistribution platform that enables organizations to list, discover and claim surplus food through a centralized platform.
+<div align="center">
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=tejashr94&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true"/>
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=tejashr94&layout=compact&theme=tokyonight&hide_border=true"/>
+</div>
 
-### Key Features
+<div align="center">
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=tejashr94&theme=tokyonight&hide_border=true"/>
+</div>
 
-- 🍱 Developed a centralized surplus food redistribution platform
-- 🔗 Architected **10+ RESTful APIs**
-- ⚡ Implemented **Socket.IO** for low-latency communication
-- 💬 Developed real-time chat functionality
-- 🔄 Implemented real-time availability synchronization
-- 🤝 Enabled organization–NGO coordination
-- 📍 Integrated **Leaflet geospatial mapping**
-- 🌎 Implemented geolocation and nearby-food discovery
-- 🌱 Supports **SDG 2 – Zero Hunger**
-- ♻️ Supports **SDG 12 – Responsible Consumption and Production**
+<div align="center">
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=tejashr94&theme=tokyo-night&hide_border=true&area=true"/>
+</div>
 
----
+<div align="center">
+<img src="https://github-profile-trophy.vercel.app/?username=tejashr94&theme=tokyonight&no-frame=true&row=1&column=7&margin-w=8"/>
+</div>
 
-## 🛡️ SakhiShield
+<br>
 
-**Kotlin | XML | Android SDK | Leaflet | Google Maps API | SMSManager | Firebase**
+## 🔥 Featured Projects
 
-An Android-based safety application designed for emergency assistance, location-based services and rapid incident response.
+<table>
+<tr>
+<td width="50%">
 
-### Key Features
+### 🌱 [PlentyBridge](https://github.com/tejashr94)
+**MERN • MongoDB Atlas • Socket.IO • Leaflet • REST APIs**
 
-- 📱 Developed an Android safety application
-- 🛡️ Implemented **5+ core safety modules**
-- 🚨 Designed emergency assistance workflows
-- 📍 Integrated **Google Maps API and Leaflet**
-- 🗺️ Implemented real-time geolocation
-- 📌 Added interactive mapping and location visualization
-- 📲 Integrated **SMSManager** for emergency communication
-- 🔔 Implemented automated emergency alert workflows
-- 🔥 Used Firebase for application functionality
+Real-time surplus food redistribution platform connecting organizations & NGOs to reduce food waste.
 
----
+- 🔌 10+ RESTful APIs with Socket.IO for low-latency live chat & sync
+- 🗺️ Leaflet geospatial mapping for nearby-food discovery
+- 🎯 Supports **SDG 2 (Zero Hunger)** & **SDG 12 (Responsible Consumption)**
 
-# 🪖 Achievements
+`Aug 2026`
 
-## 🏅 NCC A Certificate & Letter of Appreciation
+</td>
+<td width="50%">
 
-Received the **NCC A Certificate and Letter of Appreciation** and was recognized for exceptional performance in NCC by the Principal of **Army Public School Pathankot**.
+### 🛡️ [SakhiShield](https://github.com/tejashr94)
+**Kotlin • XML • Android SDK • Google Maps API • Firebase**
 
-## 🇮🇳 MILAP 21 – Android Application for Indian Army Veterans
+Android safety app with 5+ emergency-response modules for rapid incident handling.
 
-Developed an Android mobile application designed to streamline:
+- 📍 Real-time geolocation & interactive mapping via Google Maps + Leaflet
+- 🚨 SMSManager-based automated emergency alert workflows
+- ⚡ Built for fast, intuitive access during critical moments
 
-- 🏥 Hospital services
-- 🍽️ Canteen services
-- 🏥 ECHS services
+`Jun 2026`
 
-### Technologies Used
+</td>
+</tr>
+</table>
 
-`Java` `Kotlin` `JavaScript`
+<br>
 
----
+## 🏅 Certifications
 
-# 📚 Training
+<div align="center">
 
-## Android for Beginners: Build Your First App
+![](https://img.shields.io/badge/Android_for_Beginners-LPU-3DDC84?style=flat-square&logo=android&logoColor=white)
+![](https://img.shields.io/badge/C_Programming-CSE_Pathshala-00599C?style=flat-square&logo=c&logoColor=white)
+![](https://img.shields.io/badge/C++_Programming-Infosys_Springboard-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+![](https://img.shields.io/badge/Basics_of_C++-CodeHelp-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+![](https://img.shields.io/badge/CyberSmart_Awareness-WNS_Cares_Foundation-FF4B4B?style=flat-square&logo=shield&logoColor=white)
 
-**Lovely Professional University | June 2026 – July 2026**
+</div>
 
-During the training, I worked extensively with:
+## 🏆 Achievements
 
-- Kotlin programming
-- Object-Oriented Programming
-- Functions and Classes
-- Collections
-- Control Flow
-- XML UI development
-- Jetpack Compose
-- Android Studio
-- Application development
-- Debugging
-- Emulator testing
-- Build management
-- Android application lifecycle
+- 🎖️ **NCC 'A' Certificate** & Letter of Appreciation — Army Public School Pathankot
+- 📱 Built **MILAP 21** — an Android app for Indian Army Veterans (Java, Kotlin, JS) streamlining hospital, canteen & ECHS services
 
----
+<br>
 
-# 🏆 Certifications
+## 🎓 Education
 
-| Certificate | Organization | Date |
-|---|---|---|
-| 📜 C Programming | CSE Pathshala | Jan 2025 |
-| 📜 CyberSmart Awareness – CSR Project Intern | WNS Cares Foundation | Aug 2025 |
-| 📜 Programming Using C++ | Infosys Springboard | Aug 2025 |
-| 📜 Basics of C++ | CodeHelp | Nov 2025 |
+| Institution | Degree | Duration | Score |
+|---|---|---|---|
+| Lovely Professional University | B.Tech, Computer Science & Engineering | Aug'24 – Present | CGPA: **9.25** |
+| Army Public School Ayodhya Cantt | Intermediate (PCM) | Mar'22 – May'23 | 87.2% |
+| Army Public School Pathankot | Matriculation | Mar'20 – May'21 | 93.4% |
 
----
+<br>
 
-# 🎓 Education
+## 📈 Contribution Snake
 
-### 🎓 Lovely Professional University
+<div align="center">
+<img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg" />
 
-**Bachelor of Technology – Computer Science & Engineering**
+<sub>⚙️ To activate this, add the <a href="https://github.com/Platane/snk">Platane/snk</a> GitHub Action to a repo named <code>tejashr94/tejashr94</code> — it auto-generates this animation from your contribution graph.</sub>
+</div>
 
-📍 Phagwara, Punjab  
-📅 August 2024 – Present  
-⭐ **CGPA: 9.25**
+<br>
 
----
+## 📫 Let's Connect
 
-### 🏫 Army Public School, Ayodhya Cantt
+<div align="center">
 
-**Intermediate – PCM**
+<a href="https://linkedin.com/in/tejashrai"><img src="https://img.shields.io/badge/-Tejash%20Rai-0A66C2?style=for-the-badge&logo=Linkedin&logoColor=white"/></a>
+<a href="mailto:tejashr94@gmail.com"><img src="https://img.shields.io/badge/-tejashr94%40gmail.com-D14836?style=for-the-badge&logo=Gmail&logoColor=white"/></a>
 
-📅 March 2022 – May 2023  
-📊 **Percentage: 87.2%**
+### "Code. Break. Fix. Repeat." 💻⚡
 
----
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2575fc,100:6a11cb&height=120&section=footer"/>
 
-### 🏫 Army Public School, Pathankot
-
-**Matriculate**
-
-📅 March 2020 – May 2021  
-📊 **Percentage: 93.4%**
-
----
-
-# 💡 Soft Skills
-
-- 🧩 Problem Solving
-- 👑 Leadership
-- 💪 Resilience
-- 📚 Learning Agility
-- ⏱️ Time Management
-
----
-
-# 📊 GitHub Statistics
-
-![Tejash's GitHub Stats](https://github-readme-stats.vercel.app/api?username=tejashr94&show_icons=true&theme=tokyonight&hide_border=true&count_private=true)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=tejashr94&layout=compact&theme=tokyonight&hide_border=true)
-
-![GitHub Streak](https://streak-stats.demolab.com?user=tejashr94&theme=tokyonight&hide_border=true)
-
----
-
-# 🧠 Currently Working On
-
-- 🔥 Strengthening **Data Structures & Algorithms**
-- 💻 Building full-stack web applications
-- 📱 Developing Android applications
-- 🧩 Improving problem-solving skills
-- 🚀 Working on real-world projects
-- 🌱 Exploring modern development technologies
-
----
-
-# 🎯 My Goals
-
-- 🚀 Become a strong **Full-Stack Developer**
-- 📱 Build production-ready Android applications
-- 🧠 Master **Data Structures & Algorithms**
-- 💻 Contribute to meaningful open-source projects
-- 🌎 Build technology that solves real-world problems
-- 📈 Continuously improve my development and problem-solving skills
-
----
-
-# 🤝 Connect With Me
-
-[![GitHub](https://img.shields.io/badge/GitHub-Tejash_Rai-181717?style=for-the-badge&logo=github)](https://github.com/tejashr94)
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Tejash_Rai-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/tejashrai)
-
-[![Email](https://img.shields.io/badge/Email-tejashr94%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:tejashr94@gmail.com)
-
----
-
-# ⚡ Developer Philosophy
-
-> **"Code. Build. Learn. Improve. Repeat."**
-
-I believe consistent learning and building real-world projects are the best ways to grow as a developer.
-
----
-
-⭐ **If you find my projects interesting, consider giving them a star!**
-
-### Thanks for visiting my profile! 🚀
+</div>
