@@ -146,9 +146,9 @@ Android safety app with 5+ emergency-response modules for rapid incident handlin
 ## 📈 Contribution Snake
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg" />
+## 🐍 My Contributions
 
-<sub>⚙️ To activate this, add the <a href="https://github.com/Platane/snk">Platane/snk</a> GitHub Action to a repo named <code>tejashr94/tejashr94</code> — it auto-generates this animation from your contribution graph.</sub>
+![GitHub Contribution Snake](https://raw.githubusercontent.com/tejashr94/tejashr94/output/github-contribution-grid-snake.svg)
 </div>
 
 <br>
