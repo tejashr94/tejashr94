@@ -102,7 +102,7 @@ Real-time surplus food redistribution platform connecting organizations & NGOs t
 
 Android safety app with 5+ emergency-response modules for rapid incident handling.
 
-- 📍 Real-time geolocation & interactive mapping via Google Maps + Leaflet
+- 📍 Real-time geolocation & interactive mapping via Google Maps and Leaflet
 - 🚨 SMSManager-based automated emergency alert workflows
 - ⚡ Built for fast, intuitive access during critical moments
 
