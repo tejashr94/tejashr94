@@ -128,7 +128,7 @@ Android safety app with 5+ emergency-response modules for rapid incident handlin
 
 ## 🏆 Achievements
 
-- 🎖️ **NCC 'A' Certificate** & Letter of Appreciation — Army Public School Pathankot
+- 🎖️ **NCC 'A' Certificate** & Letter of Appreciation from Army Public School Pathankot
 - 📱 Built **MILAP 21** — an Android app for Indian Army Veterans (Java, Kotlin, JS) streamlining hospital, canteen & ECHS services
 
 <br>
