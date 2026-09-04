@@ -24,7 +24,7 @@ cgpa: 9.25
 location: Phagwara, Punjab, India
 focus: Full-Stack Web Development • Android Development • Real-Time Systems
 currently_building:
-  - PlentyBridge — real-time surplus food redistribution platform (MERN)
+  - PlentyBridge — real-time surplus food redistribution management (MERN)
   - SakhiShield — Android safety app with live geolocation & SOS alerts
 soft_skills: [Problem-Solving, Leadership, Resilience, Time Management, Learning Agility]
 fun_fact: "I turn ideas into APIs faster than coffee gets cold ☕"
