@@ -112,10 +112,6 @@ SPECIALTY   = "Android Systems, Low-Latency Web, Geospatial GIS, Microservices"
 <!-- ==================== 4. PROJECTS SECTION ==================== -->
 ## 🚀 PROJECTS // MISSION-CRITICAL DEPLOYMENTS
 
-<div align="center">
-  <img src="./projects_showcase_3d.svg" alt="Projects Showcase HUD" width="100%" />
-</div>
-
 <br/>
 
 ### 1️⃣ **PlentyBridge** | `MERN Stack, MongoDB Atlas, Leaflet, Socket.IO, REST APIs, Geolocation`
@@ -154,10 +150,6 @@ SPECIALTY   = "Android Systems, Low-Latency Web, Geospatial GIS, Microservices"
 
 <!-- ==================== 6. CERTIFICATES SECTION ==================== -->
 ## 📜 CERTIFICATES // VERIFIED INDUSTRY CREDENTIALS
-
-<div align="center">
-  <img src="./achievements_trophy_3d.svg" alt="Achievements and Certifications Vault" width="100%" />
-</div>
 
 <br/>
 
