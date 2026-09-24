@@ -1,0 +1,203 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 220" width="1100" height="220">
+  <defs>
+    <radialGradient id="snakeBg" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#0c1929"/>
+      <stop offset="60%" stop-color="#060e17"/>
+      <stop offset="100%" stop-color="#020509"/>
+    </radialGradient>
+
+    <linearGradient id="snakeNeon" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f6ff"/>
+      <stop offset="50%" stop-color="#ff007f"/>
+      <stop offset="100%" stop-color="#00ff9d"/>
+    </linearGradient>
+
+    <filter id="cyberGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      @keyframes snakeCrawl {
+        0% { stroke-dashoffset: 2000; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes eatPulse {
+        0%, 100% { transform: scale(1); opacity: 0.3; }
+        50% { transform: scale(1.4); opacity: 1; filter: drop-shadow(0 0 6px #00f6ff); }
+      }
+      @keyframes radarSweep {
+        0% { transform: translateX(0); opacity: 0; }
+        50% { opacity: 0.5; }
+        100% { transform: translateX(1050px); opacity: 0; }
+      }
+      .snake-path {
+        stroke-dasharray: 120 1800;
+        animation: snakeCrawl 12s linear infinite;
+      }
+      .snake-head {
+        animation: eatPulse 1.2s ease-in-out infinite;
+      }
+      .sweep-line {
+        animation: radarSweep 6s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1100" height="220" rx="18" fill="url(#snakeBg)" stroke="#1a3b5c" stroke-width="1.5"/>
+
+  <!-- Top System Bar -->
+  <g transform="translate(24, 18)">
+    <rect width="1052" height="30" rx="6" fill="#081422" stroke="#00f6ff" stroke-opacity="0.3"/>
+    <circle cx="16" cy="15" r="4" fill="#00ff9d"/>
+    <text x="30" y="19" font-family="'Courier New', monospace" font-size="11" font-weight="700" fill="#00f6ff" letter-spacing="2">
+      CYBER_SNAKE_EATER // 2026 CONTRIBUTION TELEMETRY MATRIX
+    </text>
+    <text x="940" y="19" font-family="'Courier New', monospace" font-size="10" fill="#ff007f" letter-spacing="1">
+      ● LIVE_CONSUMPTION
+    </text>
+  </g>
+
+  <!-- ==================== CONTRIBUTION GRID DOTS ==================== -->
+  <g transform="translate(30, 65)">
+    <!-- 52 Columns x 7 Rows Simulated Contribution Grid -->
+    <!-- Grid Row 1 -->
+    <g fill="#162b40">
+      <!-- Background Inactive Matrix Cells -->
+      <g opacity="0.4">
+        <!-- Render 52 dots in loop pattern -->
+        <circle cx="10" cy="10" r="4"/><circle cx="30" cy="10" r="4"/><circle cx="50" cy="10" r="4"/><circle cx="70" cy="10" r="4"/><circle cx="90" cy="10" r="4"/>
+        <circle cx="110" cy="10" r="4"/><circle cx="130" cy="10" r="4"/><circle cx="150" cy="10" r="4"/><circle cx="170" cy="10" r="4"/><circle cx="190" cy="10" r="4"/>
+        <circle cx="210" cy="10" r="4"/><circle cx="230" cy="10" r="4"/><circle cx="250" cy="10" r="4"/><circle cx="270" cy="10" r="4"/><circle cx="290" cy="10" r="4"/>
+        <circle cx="310" cy="10" r="4"/><circle cx="330" cy="10" r="4"/><circle cx="350" cy="10" r="4"/><circle cx="370" cy="10" r="4"/><circle cx="390" cy="10" r="4"/>
+        <circle cx="410" cy="10" r="4"/><circle cx="430" cy="10" r="4"/><circle cx="450" cy="10" r="4"/><circle cx="470" cy="10" r="4"/><circle cx="490" cy="10" r="4"/>
+        <circle cx="510" cy="10" r="4"/><circle cx="530" cy="10" r="4"/><circle cx="550" cy="10" r="4"/><circle cx="570" cy="10" r="4"/><circle cx="590" cy="10" r="4"/>
+        <circle cx="610" cy="10" r="4"/><circle cx="630" cy="10" r="4"/><circle cx="650" cy="10" r="4"/><circle cx="670" cy="10" r="4"/><circle cx="690" cy="10" r="4"/>
+        <circle cx="710" cy="10" r="4"/><circle cx="730" cy="10" r="4"/><circle cx="750" cy="10" r="4"/><circle cx="770" cy="10" r="4"/><circle cx="790" cy="10" r="4"/>
+        <circle cx="810" cy="10" r="4"/><circle cx="830" cy="10" r="4"/><circle cx="850" cy="10" r="4"/><circle cx="870" cy="10" r="4"/><circle cx="890" cy="10" r="4"/>
+        <circle cx="910" cy="10" r="4"/><circle cx="930" cy="10" r="4"/><circle cx="950" cy="10" r="4"/><circle cx="970" cy="10" r="4"/><circle cx="990" cy="10" r="4"/><circle cx="1010" cy="10" r="4"/><circle cx="1030" cy="10" r="4"/>
+
+        <!-- Row 2 -->
+        <circle cx="10" cy="26" r="4"/><circle cx="30" cy="26" r="4"/><circle cx="50" cy="26" r="4"/><circle cx="70" cy="26" r="4"/><circle cx="90" cy="26" r="4"/>
+        <circle cx="110" cy="26" r="4"/><circle cx="130" cy="26" r="4"/><circle cx="150" cy="26" r="4"/><circle cx="170" cy="26" r="4"/><circle cx="190" cy="26" r="4"/>
+        <circle cx="210" cy="26" r="4"/><circle cx="230" cy="26" r="4"/><circle cx="250" cy="26" r="4"/><circle cx="270" cy="26" r="4"/><circle cx="290" cy="26" r="4"/>
+        <circle cx="310" cy="26" r="4"/><circle cx="330" cy="26" r="4"/><circle cx="350" cy="26" r="4"/><circle cx="370" cy="26" r="4"/><circle cx="390" cy="26" r="4"/>
+        <circle cx="410" cy="26" r="4"/><circle cx="430" cy="26" r="4"/><circle cx="450" cy="26" r="4"/><circle cx="470" cy="26" r="4"/><circle cx="490" cy="26" r="4"/>
+        <circle cx="510" cy="26" r="4"/><circle cx="530" cy="26" r="4"/><circle cx="550" cy="26" r="4"/><circle cx="570" cy="26" r="4"/><circle cx="590" cy="26" r="4"/>
+        <circle cx="610" cy="26" r="4"/><circle cx="630" cy="26" r="4"/><circle cx="650" cy="26" r="4"/><circle cx="670" cy="26" r="4"/><circle cx="690" cy="26" r="4"/>
+        <circle cx="710" cy="26" r="4"/><circle cx="730" cy="26" r="4"/><circle cx="750" cy="26" r="4"/><circle cx="770" cy="26" r="4"/><circle cx="790" cy="26" r="4"/>
+        <circle cx="810" cy="26" r="4"/><circle cx="830" cy="26" r="4"/><circle cx="850" cy="26" r="4"/><circle cx="870" cy="26" r="4"/><circle cx="890" cy="26" r="4"/>
+        <circle cx="910" cy="26" r="4"/><circle cx="930" cy="26" r="4"/><circle cx="950" cy="26" r="4"/><circle cx="970" cy="26" r="4"/><circle cx="990" cy="26" r="4"/><circle cx="1010" cy="26" r="4"/><circle cx="1030" cy="26" r="4"/>
+
+        <!-- Row 3 -->
+        <circle cx="10" cy="42" r="4"/><circle cx="30" cy="42" r="4"/><circle cx="50" cy="42" r="4"/><circle cx="70" cy="42" r="4"/><circle cx="90" cy="42" r="4"/>
+        <circle cx="110" cy="42" r="4"/><circle cx="130" cy="42" r="4"/><circle cx="150" cy="42" r="4"/><circle cx="170" cy="42" r="4"/><circle cx="190" cy="42" r="4"/>
+        <circle cx="210" cy="42" r="4"/><circle cx="230" cy="42" r="4"/><circle cx="250" cy="42" r="4"/><circle cx="270" cy="42" r="4"/><circle cx="290" cy="42" r="4"/>
+        <circle cx="310" cy="42" r="4"/><circle cx="330" cy="42" r="4"/><circle cx="350" cy="42" r="4"/><circle cx="370" cy="42" r="4"/><circle cx="390" cy="42" r="4"/>
+        <circle cx="410" cy="42" r="4"/><circle cx="430" cy="42" r="4"/><circle cx="450" cy="42" r="4"/><circle cx="470" cy="42" r="4"/><circle cx="490" cy="42" r="4"/>
+        <circle cx="510" cy="42" r="4"/><circle cx="530" cy="42" r="4"/><circle cx="550" cy="42" r="4"/><circle cx="570" cy="42" r="4"/><circle cx="590" cy="42" r="4"/>
+        <circle cx="610" cy="42" r="4"/><circle cx="630" cy="42" r="4"/><circle cx="650" cy="42" r="4"/><circle cx="670" cy="42" r="4"/><circle cx="690" cy="42" r="4"/>
+        <circle cx="710" cy="42" r="4"/><circle cx="730" cy="42" r="4"/><circle cx="750" cy="42" r="4"/><circle cx="770" cy="42" r="4"/><circle cx="790" cy="42" r="4"/>
+        <circle cx="810" cy="42" r="4"/><circle cx="830" cy="42" r="4"/><circle cx="850" cy="42" r="4"/><circle cx="870" cy="42" r="4"/><circle cx="890" cy="42" r="4"/>
+        <circle cx="910" cy="42" r="4"/><circle cx="930" cy="42" r="4"/><circle cx="950" cy="42" r="4"/><circle cx="970" cy="42" r="4"/><circle cx="990" cy="42" r="4"/><circle cx="1010" cy="42" r="4"/><circle cx="1030" cy="42" r="4"/>
+
+        <!-- Row 4 -->
+        <circle cx="10" cy="58" r="4"/><circle cx="30" cy="58" r="4"/><circle cx="50" cy="58" r="4"/><circle cx="70" cy="58" r="4"/><circle cx="90" cy="58" r="4"/>
+        <circle cx="110" cy="58" r="4"/><circle cx="130" cy="58" r="4"/><circle cx="150" cy="58" r="4"/><circle cx="170" cy="58" r="4"/><circle cx="190" cy="58" r="4"/>
+        <circle cx="210" cy="58" r="4"/><circle cx="230" cy="58" r="4"/><circle cx="250" cy="58" r="4"/><circle cx="270" cy="58" r="4"/><circle cx="290" cy="58" r="4"/>
+        <circle cx="310" cy="58" r="4"/><circle cx="330" cy="58" r="4"/><circle cx="350" cy="58" r="4"/><circle cx="370" cy="58" r="4"/><circle cx="390" cy="58" r="4"/>
+        <circle cx="410" cy="58" r="4"/><circle cx="430" cy="58" r="4"/><circle cx="450" cy="58" r="4"/><circle cx="470" cy="58" r="4"/><circle cx="490" cy="58" r="4"/>
+        <circle cx="510" cy="58" r="4"/><circle cx="530" cy="58" r="4"/><circle cx="550" cy="58" r="4"/><circle cx="570" cy="58" r="4"/><circle cx="590" cy="58" r="4"/>
+        <circle cx="610" cy="58" r="4"/><circle cx="630" cy="58" r="4"/><circle cx="650" cy="58" r="4"/><circle cx="670" cy="58" r="4"/><circle cx="690" cy="58" r="4"/>
+        <circle cx="710" cy="58" r="4"/><circle cx="730" cy="58" r="4"/><circle cx="750" cy="58" r="4"/><circle cx="770" cy="58" r="4"/><circle cx="790" cy="58" r="4"/>
+        <circle cx="810" cy="58" r="4"/><circle cx="830" cy="58" r="4"/><circle cx="850" cy="58" r="4"/><circle cx="870" cy="58" r="4"/><circle cx="890" cy="58" r="4"/>
+        <circle cx="910" cy="58" r="4"/><circle cx="930" cy="58" r="4"/><circle cx="950" cy="58" r="4"/><circle cx="970" cy="58" r="4"/><circle cx="990" cy="58" r="4"/><circle cx="1010" cy="58" r="4"/><circle cx="1030" cy="58" r="4"/>
+
+        <!-- Row 5 -->
+        <circle cx="10" cy="74" r="4"/><circle cx="30" cy="74" r="4"/><circle cx="50" cy="74" r="4"/><circle cx="70" cy="74" r="4"/><circle cx="90" cy="74" r="4"/>
+        <circle cx="110" cy="74" r="4"/><circle cx="130" cy="74" r="4"/><circle cx="150" cy="74" r="4"/><circle cx="170" cy="74" r="4"/><circle cx="190" cy="74" r="4"/>
+        <circle cx="210" cy="74" r="4"/><circle cx="230" cy="74" r="4"/><circle cx="250" cy="74" r="4"/><circle cx="270" cy="74" r="4"/><circle cx="290" cy="74" r="4"/>
+        <circle cx="310" cy="74" r="4"/><circle cx="330" cy="74" r="4"/><circle cx="350" cy="74" r="4"/><circle cx="370" cy="74" r="4"/><circle cx="390" cy="74" r="4"/>
+        <circle cx="410" cy="74" r="4"/><circle cx="430" cy="74" r="4"/><circle cx="450" cy="74" r="4"/><circle cx="470" cy="74" r="4"/><circle cx="490" cy="74" r="4"/>
+        <circle cx="510" cy="74" r="4"/><circle cx="530" cy="74" r="4"/><circle cx="550" cy="74" r="4"/><circle cx="570" cy="74" r="4"/><circle cx="590" cy="74" r="4"/>
+        <circle cx="610" cy="74" r="4"/><circle cx="630" cy="74" r="4"/><circle cx="650" cy="74" r="4"/><circle cx="670" cy="74" r="4"/><circle cx="690" cy="74" r="4"/>
+        <circle cx="710" cy="74" r="4"/><circle cx="730" cy="74" r="4"/><circle cx="750" cy="74" r="4"/><circle cx="770" cy="74" r="4"/><circle cx="790" cy="74" r="4"/>
+        <circle cx="810" cy="74" r="4"/><circle cx="830" cy="74" r="4"/><circle cx="850" cy="74" r="4"/><circle cx="870" cy="74" r="4"/><circle cx="890" cy="74" r="4"/>
+        <circle cx="910" cy="74" r="4"/><circle cx="930" cy="74" r="4"/><circle cx="950" cy="74" r="4"/><circle cx="970" cy="74" r="4"/><circle cx="990" cy="74" r="4"/><circle cx="1010" cy="74" r="4"/><circle cx="1030" cy="74" r="4"/>
+
+        <!-- Row 6 -->
+        <circle cx="10" cy="90" r="4"/><circle cx="30" cy="90" r="4"/><circle cx="50" cy="90" r="4"/><circle cx="70" cy="90" r="4"/><circle cx="90" cy="90" r="4"/>
+        <circle cx="110" cy="90" r="4"/><circle cx="130" cy="90" r="4"/><circle cx="150" cy="90" r="4"/><circle cx="170" cy="90" r="4"/><circle cx="190" cy="90" r="4"/>
+        <circle cx="210" cy="90" r="4"/><circle cx="230" cy="90" r="4"/><circle cx="250" cy="90" r="4"/><circle cx="270" cy="90" r="4"/><circle cx="290" cy="90" r="4"/>
+        <circle cx="310" cy="90" r="4"/><circle cx="330" cy="90" r="4"/><circle cx="350" cy="90" r="4"/><circle cx="370" cy="90" r="4"/><circle cx="390" cy="90" r="4"/>
+        <circle cx="410" cy="90" r="4"/><circle cx="430" cy="90" r="4"/><circle cx="450" cy="90" r="4"/><circle cx="470" cy="90" r="4"/><circle cx="490" cy="90" r="4"/>
+        <circle cx="510" cy="90" r="4"/><circle cx="530" cy="90" r="4"/><circle cx="550" cy="90" r="4"/><circle cx="570" cy="90" r="4"/><circle cx="590" cy="90" r="4"/>
+        <circle cx="610" cy="90" r="4"/><circle cx="630" cy="90" r="4"/><circle cx="650" cy="90" r="4"/><circle cx="670" cy="90" r="4"/><circle cx="690" cy="90" r="4"/>
+        <circle cx="710" cy="90" r="4"/><circle cx="730" cy="90" r="4"/><circle cx="750" cy="90" r="4"/><circle cx="770" cy="90" r="4"/><circle cx="790" cy="90" r="4"/>
+        <circle cx="810" cy="90" r="4"/><circle cx="830" cy="90" r="4"/><circle cx="850" cy="90" r="4"/><circle cx="870" cy="90" r="4"/><circle cx="890" cy="90" r="4"/>
+        <circle cx="910" cy="90" r="4"/><circle cx="930" cy="90" r="4"/><circle cx="950" cy="90" r="4"/><circle cx="970" cy="90" r="4"/><circle cx="990" cy="90" r="4"/><circle cx="1010" cy="90" r="4"/><circle cx="1030" cy="90" r="4"/>
+
+        <!-- Row 7 -->
+        <circle cx="10" cy="106" r="4"/><circle cx="30" cy="106" r="4"/><circle cx="50" cy="106" r="4"/><circle cx="70" cy="106" r="4"/><circle cx="90" cy="106" r="4"/>
+        <circle cx="110" cy="106" r="4"/><circle cx="130" cy="106" r="4"/><circle cx="150" cy="106" r="4"/><circle cx="170" cy="106" r="4"/><circle cx="190" cy="106" r="4"/>
+        <circle cx="210" cy="106" r="4"/><circle cx="230" cy="106" r="4"/><circle cx="250" cy="106" r="4"/><circle cx="270" cy="106" r="4"/><circle cx="290" cy="106" r="4"/>
+        <circle cx="310" cy="106" r="4"/><circle cx="330" cy="106" r="4"/><circle cx="350" cy="106" r="4"/><circle cx="370" cy="106" r="4"/><circle cx="390" cy="106" r="4"/>
+        <circle cx="410" cy="106" r="4"/><circle cx="430" cy="106" r="4"/><circle cx="450" cy="106" r="4"/><circle cx="470" cy="106" r="4"/><circle cx="490" cy="106" r="4"/>
+        <circle cx="510" cy="106" r="4"/><circle cx="530" cy="106" r="4"/><circle cx="550" cy="106" r="4"/><circle cx="570" cy="106" r="4"/><circle cx="590" cy="106" r="4"/>
+        <circle cx="610" cy="106" r="4"/><circle cx="630" cy="106" r="4"/><circle cx="650" cy="106" r="4"/><circle cx="670" cy="106" r="4"/><circle cx="690" cy="106" r="4"/>
+        <circle cx="710" cy="106" r="4"/><circle cx="730" cy="106" r="4"/><circle cx="750" cy="106" r="4"/><circle cx="770" cy="106" r="4"/><circle cx="790" cy="106" r="4"/>
+        <circle cx="810" cy="106" r="4"/><circle cx="830" cy="106" r="4"/><circle cx="850" cy="106" r="4"/><circle cx="870" cy="106" r="4"/><circle cx="890" cy="106" r="4"/>
+        <circle cx="910" cy="106" r="4"/><circle cx="930" cy="106" r="4"/><circle cx="950" cy="106" r="4"/><circle cx="970" cy="106" r="4"/><circle cx="990" cy="106" r="4"/><circle cx="1010" cy="106" r="4"/><circle cx="1030" cy="106" r="4"/>
+      </g>
+    </g>
+
+    <!-- Glowing Active Commits / Dots Eaten by Snake -->
+    <g fill="#00ff9d" filter="url(#cyberGlow)">
+      <circle cx="90" cy="42" r="4.5"/><circle cx="110" cy="42" r="4.5"/><circle cx="130" cy="42" r="4.5"/>
+      <circle cx="170" cy="26" r="4.5"/><circle cx="190" cy="26" r="4.5"/><circle cx="210" cy="58" r="4.5"/>
+      <circle cx="310" cy="74" r="4.5"/><circle cx="330" cy="74" r="4.5"/><circle cx="350" cy="74" r="4.5"/>
+      <circle cx="490" cy="42" r="4.5"/><circle cx="510" cy="42" r="4.5"/><circle cx="530" cy="58" r="4.5"/>
+      <circle cx="670" cy="90" r="4.5"/><circle cx="690" cy="90" r="4.5"/><circle cx="710" cy="90" r="4.5"/>
+      <circle cx="850" cy="26" r="4.5"/><circle cx="870" cy="26" r="4.5"/><circle cx="890" cy="26" r="4.5"/>
+    </g>
+
+    <g fill="#00f6ff" filter="url(#cyberGlow)">
+      <circle cx="250" cy="42" r="4.5"/><circle cx="270" cy="42" r="4.5"/><circle cx="290" cy="42" r="4.5"/>
+      <circle cx="410" cy="90" r="4.5"/><circle cx="430" cy="90" r="4.5"/><circle cx="450" cy="90" r="4.5"/>
+      <circle cx="610" cy="26" r="4.5"/><circle cx="630" cy="26" r="4.5"/><circle cx="650" cy="26" r="4.5"/>
+      <circle cx="770" cy="58" r="4.5"/><circle cx="790" cy="58" r="4.5"/><circle cx="810" cy="58" r="4.5"/>
+      <circle cx="950" cy="74" r="4.5"/><circle cx="970" cy="74" r="4.5"/><circle cx="990" cy="74" r="4.5"/>
+    </g>
+
+    <!-- Animated Snake Body Path (Crawling across the matrix) -->
+    <path d="M10 10 H210 V42 H450 V90 H730 V26 H970 V106 H1030" fill="none" stroke="url(#snakeNeon)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" class="snake-path" filter="url(#cyberGlow)"/>
+
+    <!-- Dynamic Neon Snake Head -->
+    <circle cx="730" cy="26" r="7" fill="#ffffff" stroke="#ff007f" stroke-width="2" class="snake-head" filter="url(#cyberGlow)"/>
+    
+    <!-- Target Food Particle -->
+    <rect x="746" y="22" width="8" height="8" fill="#ffd700" class="snake-head" filter="url(#cyberGlow)"/>
+  </g>
+
+  <!-- Radar Scanning Beam -->
+  <g class="sweep-line">
+    <line x1="30" y1="55" x2="30" y2="190" stroke="#00f6ff" stroke-width="2" opacity="0.6" filter="url(#cyberGlow)"/>
+  </g>
+
+  <!-- Bottom Telemetry Footer -->
+  <g transform="translate(30, 195)">
+    <text x="0" y="10" font-family="'Courier New', monospace" font-size="10" fill="#6c93b3">
+      PIPELINE: <tspan fill="#00ff9d" font-weight="700">ACTIVE_CRON [0 */12 * * *]</tspan>
+    </text>
+    <text x="500" y="10" font-family="'Courier New', monospace" font-size="10" fill="#6c93b3">
+      PALETTE: <tspan fill="#00f6ff" font-weight="700">CYBERPUNK_NEON_MATRIX</tspan>
+    </text>
+    <text x="1035" y="10" font-family="'Courier New', monospace" font-size="10" fill="#ffd700" text-anchor="end">
+      TARGET: @tejashr94
+    </text>
+  </g>
+</svg>

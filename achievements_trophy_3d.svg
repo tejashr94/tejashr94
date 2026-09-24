@@ -1,0 +1,345 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 440" width="1200" height="440">
+  <defs>
+    <!-- Background Gradients -->
+    <radialGradient id="achBg" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#0f1f33"/>
+      <stop offset="60%" stop-color="#070d17"/>
+      <stop offset="100%" stop-color="#020409"/>
+    </radialGradient>
+
+    <linearGradient id="goldBanner" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffd700"/>
+      <stop offset="50%" stop-color="#ffae00"/>
+      <stop offset="100%" stop-color="#ff7700"/>
+    </linearGradient>
+
+    <linearGradient id="cyberGlass" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#14283f" stop-opacity="0.92"/>
+      <stop offset="100%" stop-color="#081422" stop-opacity="0.98"/>
+    </linearGradient>
+
+    <linearGradient id="scanVault" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00f6ff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00f6ff" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#00f6ff" stop-opacity="0"/>
+    </linearGradient>
+
+    <pattern id="achGrid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0 L0 0 0 28" fill="none" stroke="#00f6ff" stroke-opacity="0.04" stroke-width="1"/>
+    </pattern>
+
+    <!-- Filters -->
+    <filter id="achGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#00f6ff" flood-opacity="0.12"/>
+    </filter>
+
+    <!-- Animations -->
+    <style>
+      @keyframes spin3D {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      @keyframes spin3DRev {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(-360deg); }
+      }
+      @keyframes goldPulse {
+        0%, 100% { opacity: 0.7; filter: drop-shadow(0 0 2px #ffd700); }
+        50% { opacity: 1; filter: drop-shadow(0 0 10px #ffd700); }
+      }
+      @keyframes neonPulse {
+        0%, 100% { opacity: 0.6; filter: drop-shadow(0 0 2px #00f6ff); }
+        50% { opacity: 1; filter: drop-shadow(0 0 10px #00f6ff); }
+      }
+      @keyframes laserScan {
+        0% { transform: translateY(-200px); opacity: 0; }
+        20% { opacity: 0.6; }
+        80% { opacity: 0.6; }
+        100% { transform: translateY(460px); opacity: 0; }
+      }
+      @keyframes cardFloat1 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+      @keyframes cardFloat2 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+      @keyframes cardFloat3 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+      @keyframes cardFloat4 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
+
+      .spin-ring1 { transform-origin: 132px 65px; animation: spin3D 14s linear infinite; }
+      .spin-ring1-rev { transform-origin: 132px 65px; animation: spin3DRev 18s linear infinite; }
+      .spin-ring2 { transform-origin: 132px 65px; animation: spin3D 16s linear infinite; }
+      .spin-ring2-rev { transform-origin: 132px 65px; animation: spin3DRev 20s linear infinite; }
+      .spin-ring3 { transform-origin: 132px 65px; animation: spin3D 15s linear infinite; }
+      .spin-ring3-rev { transform-origin: 132px 65px; animation: spin3DRev 17s linear infinite; }
+      .spin-ring4 { transform-origin: 135px 65px; animation: spin3D 19s linear infinite; }
+      .spin-ring4-rev { transform-origin: 135px 65px; animation: spin3DRev 15s linear infinite; }
+
+      .card-float-1 { animation: cardFloat1 5s ease-in-out infinite; cursor: pointer; }
+      .card-float-2 { animation: cardFloat2 5.5s ease-in-out infinite; animation-delay: -1.5s; cursor: pointer; }
+      .card-float-3 { animation: cardFloat3 6s ease-in-out infinite; animation-delay: -3s; cursor: pointer; }
+      .card-float-4 { animation: cardFloat4 5.2s ease-in-out infinite; animation-delay: -2.2s; cursor: pointer; }
+      
+      .laser { animation: laserScan 4.5s ease-in-out infinite; }
+      .pulse-gold { animation: goldPulse 2.5s ease-in-out infinite; }
+      .pulse-neon { animation: neonPulse 2.5s ease-in-out infinite; }
+
+      .interactive-card:hover rect:first-child { stroke-width: 2.5; filter: drop-shadow(0 0 16px #00f6ff); }
+      .interactive-card:hover .verify-btn { fill: #00ff9d; }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="440" rx="22" fill="url(#achBg)" stroke="#1a3b5c" stroke-width="1.5"/>
+  <rect width="1200" height="440" rx="22" fill="url(#achGrid)"/>
+
+  <!-- Scanning Laser Bar -->
+  <g class="laser">
+    <rect x="0" y="0" width="1200" height="50" fill="url(#scanVault)"/>
+    <line x1="20" y1="25" x2="1180" y2="25" stroke="#00f6ff" stroke-width="1.5" filter="url(#achGlow)"/>
+  </g>
+
+  <!-- Top System Ribbon -->
+  <g transform="translate(30, 20)">
+    <rect width="1140" height="38" rx="10" fill="#081422" stroke="#ffd700" stroke-opacity="0.4"/>
+    <circle cx="20" cy="19" r="5" fill="#ffd700" class="pulse-gold"/>
+    <text x="36" y="24" font-family="'Courier New', monospace" font-size="11" font-weight="700" fill="#ffd700" letter-spacing="2">
+      HONORS_VAULT // INTERACTIVE VERIFIED CREDENTIALS &amp; MERIT
+    </text>
+    <text x="960" y="24" font-family="'Courier New', monospace" font-size="11" fill="#00ff9d" letter-spacing="1">
+      ● CLICK TO VERIFY BADGES
+    </text>
+  </g>
+
+  <!-- ==================== BADGE 1: ORACLE AGENTIC AI (CLICKABLE) ==================== -->
+  <a href="https://www.linkedin.com/in/tejashrai" target="_blank" rel="noopener noreferrer">
+    <g class="card-float-1 interactive-card" transform="translate(30, 80)">
+      <rect width="265" height="330" rx="16" fill="url(#cyberGlass)" stroke="#00f6ff" stroke-width="1.5" filter="url(#cardShadow)"/>
+      
+      <!-- Icon Container & Rotating 3D Rings -->
+      <g>
+        <g class="spin-ring1">
+          <circle cx="132" cy="65" r="46" fill="none" stroke="#00f6ff" stroke-opacity="0.4" stroke-width="1.5" stroke-dasharray="8 6"/>
+          <circle cx="132" cy="19" r="3" fill="#00f6ff"/>
+        </g>
+        <g class="spin-ring1-rev">
+          <circle cx="132" cy="65" r="38" fill="none" stroke="#7928ca" stroke-opacity="0.6" stroke-width="1" stroke-dasharray="14 8"/>
+        </g>
+        <circle cx="132" cy="65" r="32" fill="#0c2038" stroke="#00f6ff" stroke-width="2" class="pulse-neon"/>
+        
+        <!-- AI Brain / Circuit Icon -->
+        <path d="M120 52 Q132 44 144 52 Q153 65 144 75 Q132 84 120 75 Q111 65 120 52 Z" fill="none" stroke="#00f6ff" stroke-width="2"/>
+        <circle cx="132" cy="63" r="5" fill="#00ff9d"/>
+        <line x1="120" y1="63" x2="144" y2="63" stroke="#00f6ff" stroke-width="1.5"/>
+        <line x1="132" y1="52" x2="132" y2="74" stroke="#00f6ff" stroke-width="1.5"/>
+      </g>
+
+      <text x="132" y="130" font-family="'Segoe UI', sans-serif" font-size="15" font-weight="900" fill="#ffffff" text-anchor="middle">
+        Oracle Certified
+      </text>
+      <text x="132" y="150" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#00f6ff" text-anchor="middle">
+        Agentic AI Associate
+      </text>
+
+      <text x="132" y="174" font-family="'Courier New', monospace" font-size="9" fill="#8cb1cc" text-anchor="middle">
+        ISSUER: ORACLE UNIVERSITY
+      </text>
+
+      <!-- Details Box -->
+      <g transform="translate(16, 190)">
+        <rect width="233" height="72" rx="8" fill="#071322" stroke="#1c4063"/>
+        <text x="10" y="20" font-family="'Segoe UI', sans-serif" font-size="11" fill="#b9d7ef">
+          • Autonomous AI Agents &amp; LLM
+        </text>
+        <text x="10" y="38" font-family="'Segoe UI', sans-serif" font-size="11" fill="#b9d7ef">
+          • Multi-agent orchestration
+        </text>
+        <text x="10" y="56" font-family="'Segoe UI', sans-serif" font-size="11" fill="#b9d7ef">
+          • Enterprise AI architecture
+        </text>
+      </g>
+
+      <!-- Verification Button Pill -->
+      <g transform="translate(24, 280)">
+        <rect width="217" height="30" rx="8" fill="#0b243b" stroke="#00f6ff" stroke-width="1"/>
+        <text class="verify-btn" x="108" y="20" font-family="'Courier New', monospace" font-size="10" font-weight="700" fill="#00f6ff" text-anchor="middle">
+          ↗ VERIFY // SEP '26
+        </text>
+      </g>
+    </g>
+  </a>
+
+  <!-- ==================== BADGE 2: NCC 'A' CERTIFICATE (CLICKABLE) ==================== -->
+  <a href="https://www.linkedin.com/in/tejashrai" target="_blank" rel="noopener noreferrer">
+    <g class="card-float-2 interactive-card" transform="translate(320, 80)">
+      <rect width="265" height="330" rx="16" fill="url(#cyberGlass)" stroke="#ffd700" stroke-width="1.5" filter="url(#cardShadow)"/>
+      
+      <!-- Icon Container & Rotating 3D Rings -->
+      <g>
+        <g class="spin-ring2">
+          <circle cx="132" cy="65" r="46" fill="none" stroke="#ffd700" stroke-opacity="0.4" stroke-width="1.5" stroke-dasharray="8 6"/>
+          <circle cx="132" cy="19" r="3" fill="#ffd700"/>
+        </g>
+        <g class="spin-ring2-rev">
+          <circle cx="132" cy="65" r="38" fill="none" stroke="#ff007f" stroke-opacity="0.6" stroke-width="1" stroke-dasharray="12 8"/>
+        </g>
+        <circle cx="132" cy="65" r="32" fill="#0c2038" stroke="#ffd700" stroke-width="2" class="pulse-gold"/>
+        
+        <!-- Military / NCC Gold Star Shield -->
+        <polygon points="132,42 139,57 156,57 142,67 148,82 132,72 116,82 122,67 108,57 125,57" fill="url(#goldBanner)"/>
+      </g>
+
+      <text x="132" y="130" font-family="'Segoe UI', sans-serif" font-size="15" font-weight="900" fill="#ffffff" text-anchor="middle">
+        NCC 'A' Certificate
+      </text>
+      <text x="132" y="150" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#ffd700" text-anchor="middle">
+        Letter of Appreciation
+      </text>
+
+      <text x="132" y="174" font-family="'Courier New', monospace" font-size="9" fill="#8cb1cc" text-anchor="middle">
+        ARMY PUBLIC SCHOOL PATHANKOT
+      </text>
+
+      <!-- Details Box -->
+      <g transform="translate(16, 190)">
+        <rect width="233" height="72" rx="8" fill="#071322" stroke="#1c4063"/>
+        <text x="10" y="20" font-family="'Segoe UI', sans-serif" font-size="11" fill="#b9d7ef">
+          • Exemplary Drill &amp; Discipline
+        </text>
+        <text x="10" y="38" font-family="'Segoe UI', sans-serif" font-size="11" fill="#b9d7ef">
+          • Principal's Official Commendation
+        </text>
+        <text x="10" y="56" font-family="'Segoe UI', sans-serif" font-size="11" fill="#b9d7ef">
+          • National Cadet Corps Cadet
+        </text>
+      </g>
+
+      <!-- Verification Button Pill -->
+      <g transform="translate(24, 280)">
+        <rect width="217" height="30" rx="8" fill="#2d2208" stroke="#ffd700" stroke-width="1"/>
+        <text class="verify-btn" x="108" y="20" font-family="'Courier New', monospace" font-size="10" font-weight="700" fill="#ffd700" text-anchor="middle">
+          ↗ HONORED // APR '21
+        </text>
+      </g>
+    </g>
+  </a>
+
+  <!-- ==================== BADGE 3: MILAP 21 VETERANS (CLICKABLE) ==================== -->
+  <a href="https://github.com/tejashr94" target="_blank" rel="noopener noreferrer">
+    <g class="card-float-3 interactive-card" transform="translate(610, 80)">
+      <rect width="265" height="330" rx="16" fill="url(#cyberGlass)" stroke="#ff007f" stroke-width="1.5" filter="url(#cardShadow)"/>
+      
+      <!-- Icon Container & Rotating 3D Rings -->
+      <g>
+        <g class="spin-ring3">
+          <circle cx="132" cy="65" r="46" fill="none" stroke="#ff007f" stroke-opacity="0.4" stroke-width="1.5" stroke-dasharray="8 6"/>
+          <circle cx="132" cy="19" r="3" fill="#ff007f"/>
+        </g>
+        <g class="spin-ring3-rev">
+          <circle cx="132" cy="65" r="38" fill="none" stroke="#00f6ff" stroke-opacity="0.6" stroke-width="1" stroke-dasharray="10 6"/>
+        </g>
+        <circle cx="132" cy="65" r="32" fill="#0c2038" stroke="#ff007f" stroke-width="2" class="pulse-neon"/>
+        
+        <!-- Cross / Hospital Heart System -->
+        <path d="M125 52 H139 V59 H146 V71 H139 V78 H125 V71 H118 V59 H125 Z" fill="#ff007f"/>
+        <circle cx="132" cy="65" r="3" fill="#ffffff"/>
+      </g>
+
+      <text x="132" y="130" font-family="'Segoe UI', sans-serif" font-size="15" font-weight="900" fill="#ffffff" text-anchor="middle">
+        MILAP 21 Architect
+      </text>
+      <text x="132" y="150" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#ff007f" text-anchor="middle">
+        Indian Army Veterans
+      </text>
+
+      <text x="132" y="174" font-family="'Courier New', monospace" font-size="9" fill="#8cb1cc" text-anchor="middle">
+        DEFENCE APPLIED TECH
+      </text>
+
+      <!-- Details Box -->
+      <g transform="translate(16, 190)">
+        <rect width="233" height="72" rx="8" fill="#071322" stroke="#1c4063"/>
+        <text x="10" y="20" font-family="'Segoe UI', sans-serif" font-size="11" fill="#b9d7ef">
+          • Hospital &amp; ECHS Digitization
+        </text>
+        <text x="10" y="38" font-family="'Segoe UI', sans-serif" font-size="11" fill="#b9d7ef">
+          • Canteen &amp; Veteran Services
+        </text>
+        <text x="10" y="56" font-family="'Segoe UI', sans-serif" font-size="11" fill="#b9d7ef">
+          • Java, Kotlin &amp; JS Ecosystem
+        </text>
+      </g>
+
+      <!-- Verification Button Pill -->
+      <g transform="translate(24, 280)">
+        <rect width="217" height="30" rx="8" fill="#380a1d" stroke="#ff007f" stroke-width="1"/>
+        <text class="verify-btn" x="108" y="20" font-family="'Courier New', monospace" font-size="10" font-weight="700" fill="#ff007f" text-anchor="middle">
+          ↗ DEPLOYED // JAN '21
+        </text>
+      </g>
+    </g>
+  </a>
+
+  <!-- ==================== BADGE 4: LPU & INDUSTRY SUITE (CLICKABLE) ==================== -->
+  <a href="https://github.com/tejashr94" target="_blank" rel="noopener noreferrer">
+    <g class="card-float-4 interactive-card" transform="translate(900, 80)">
+      <rect width="270" height="330" rx="16" fill="url(#cyberGlass)" stroke="#00ff9d" stroke-width="1.5" filter="url(#cardShadow)"/>
+      
+      <!-- Icon Container & Rotating 3D Rings -->
+      <g>
+        <g class="spin-ring4">
+          <circle cx="135" cy="65" r="46" fill="none" stroke="#00ff9d" stroke-opacity="0.4" stroke-width="1.5" stroke-dasharray="8 6"/>
+          <circle cx="135" cy="19" r="3" fill="#00ff9d"/>
+        </g>
+        <g class="spin-ring4-rev">
+          <circle cx="135" cy="65" r="38" fill="none" stroke="#00f6ff" stroke-opacity="0.6" stroke-width="1" stroke-dasharray="14 8"/>
+        </g>
+        <circle cx="135" cy="65" r="32" fill="#0c2038" stroke="#00ff9d" stroke-width="2" class="pulse-neon"/>
+        
+        <!-- Terminal / Code Chevron -->
+        <path d="M122 55 L132 65 L122 75" fill="none" stroke="#00ff9d" stroke-width="3" stroke-linecap="round"/>
+        <line x1="138" y1="75" x2="148" y2="75" stroke="#00ff9d" stroke-width="3" stroke-linecap="round"/>
+      </g>
+
+      <text x="135" y="130" font-family="'Segoe UI', sans-serif" font-size="15" font-weight="900" fill="#ffffff" text-anchor="middle">
+        LPU &amp; Industry Certs
+      </text>
+      <text x="135" y="150" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#00ff9d" text-anchor="middle">
+        Specialized Suite
+      </text>
+
+      <text x="135" y="174" font-family="'Courier New', monospace" font-size="9" fill="#8cb1cc" text-anchor="middle">
+        LPU • INFOSYS • CODEHELP
+      </text>
+
+      <!-- Details Box -->
+      <g transform="translate(16, 190)">
+        <rect width="238" height="72" rx="8" fill="#071322" stroke="#1c4063"/>
+        <text x="8" y="17" font-family="'Segoe UI', sans-serif" font-size="10.5" fill="#b9d7ef">
+          • Android Mastery (LPU)
+        </text>
+        <text x="8" y="33" font-family="'Segoe UI', sans-serif" font-size="10.5" fill="#b9d7ef">
+          • C++ DSA (Infosys &amp; CodeHelp)
+        </text>
+        <text x="8" y="49" font-family="'Segoe UI', sans-serif" font-size="10.5" fill="#b9d7ef">
+          • CyberSmart Intern (WNS Cares)
+        </text>
+        <text x="8" y="65" font-family="'Segoe UI', sans-serif" font-size="10.5" fill="#b9d7ef">
+          • C Systems (CSE Pathshala)
+        </text>
+      </g>
+
+      <!-- Verification Button Pill -->
+      <g transform="translate(26, 280)">
+        <rect width="218" height="30" rx="8" fill="#072b1d" stroke="#00ff9d" stroke-width="1"/>
+        <text class="verify-btn" x="109" y="20" font-family="'Courier New', monospace" font-size="10" font-weight="700" fill="#00ff9d" text-anchor="middle">
+          ↗ VERIFY // 2021-2026
+        </text>
+      </g>
+    </g>
+  </a>
+</svg>

@@ -1,0 +1,246 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" width="1200" height="480">
+  <defs>
+    <!-- Gradients -->
+    <radialGradient id="matrixBg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0e1726"/>
+      <stop offset="60%" stop-color="#070c14"/>
+      <stop offset="100%" stop-color="#02050a"/>
+    </radialGradient>
+
+    <linearGradient id="neonCyanBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f6ff"/>
+      <stop offset="100%" stop-color="#0066ff"/>
+    </linearGradient>
+
+    <linearGradient id="neonPurplePink" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+
+    <linearGradient id="neonGreenEmerald" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#00f6ff"/>
+    </linearGradient>
+
+    <linearGradient id="neonAmberGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#ef4444"/>
+    </linearGradient>
+
+    <linearGradient id="glassCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#132338" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#08111d" stop-opacity="0.95"/>
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="glowFilt" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <pattern id="gridPat" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0 L0 0 0 24" fill="none" stroke="#00f6ff" stroke-opacity="0.04" stroke-width="1"/>
+    </pattern>
+
+    <style>
+      @keyframes orbit {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      @keyframes pulseNode {
+        0%, 100% { transform: scale(1); opacity: 0.6; }
+        50% { transform: scale(1.15); opacity: 1; filter: drop-shadow(0 0 8px #00f6ff); }
+      }
+      @keyframes progFill {
+        0% { stroke-dashoffset: 400; }
+        100% { stroke-dashoffset: 0; }
+      }
+      .spin-ring { transform-origin: 200px 240px; animation: orbit 24s linear infinite; }
+      .spin-rev { transform-origin: 200px 240px; animation: orbit 18s linear infinite reverse; }
+      .node-pulse { animation: pulseNode 3s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <!-- Canvas Base -->
+  <rect width="1200" height="480" rx="24" fill="url(#matrixBg)" stroke="#1a3b5c" stroke-width="1.5"/>
+  <rect width="1200" height="480" rx="24" fill="url(#gridPat)"/>
+
+  <!-- Top System Header -->
+  <g transform="translate(30, 24)">
+    <rect width="1140" height="40" rx="10" fill="#081422" stroke="#00f6ff" stroke-opacity="0.3"/>
+    <circle cx="20" cy="20" r="5" fill="#00ff9d"/>
+    <text x="36" y="25" font-family="'Courier New', monospace" font-size="12" font-weight="700" fill="#00f6ff" letter-spacing="2">
+      QUANTUM_SKILLS_MATRIX // ARCHITECTURE &amp; PROFICIENCY TELEMETRY
+    </text>
+    <text x="1020" y="25" font-family="'Courier New', monospace" font-size="11" fill="#7ba3be" letter-spacing="1">
+      STATUS: OPTIMIZED
+    </text>
+  </g>
+
+  <!-- ==================== LEFT: 3D HOLOGRAPHIC RADAR CORE ==================== -->
+  <g transform="translate(20, 70)">
+    <rect x="10" y="10" width="360" height="370" rx="18" fill="url(#glassCard)" stroke="#1e4468" stroke-width="1"/>
+    
+    <!-- Radar Grid & Circles -->
+    <g class="spin-ring">
+      <circle cx="190" cy="195" r="140" fill="none" stroke="#00f6ff" stroke-opacity="0.15" stroke-width="1" stroke-dasharray="6 8"/>
+      <circle cx="190" cy="195" r="110" fill="none" stroke="#7928ca" stroke-opacity="0.25" stroke-width="1.5"/>
+      <circle cx="190" cy="195" r="75" fill="none" stroke="#00f6ff" stroke-opacity="0.4" stroke-width="1" stroke-dasharray="16 6"/>
+      <circle cx="190" cy="195" r="40" fill="none" stroke="#00ff9d" stroke-opacity="0.3" stroke-width="1"/>
+      <line x1="190" y1="45" x2="190" y2="345" stroke="#00f6ff" stroke-opacity="0.2"/>
+      <line x1="40" y1="195" x2="340" y2="195" stroke="#00f6ff" stroke-opacity="0.2"/>
+      <circle cx="190" cy="55" r="5" fill="#00f6ff" filter="url(#glowFilt)"/>
+      <circle cx="300" cy="195" r="4" fill="#ff007f"/>
+    </g>
+
+    <g class="spin-rev">
+      <!-- Radar Polygon Skill Shape -->
+      <polygon points="190,85 285,150 260,270 140,285 95,160" fill="#00f6ff" fill-opacity="0.12" stroke="#00f6ff" stroke-width="2" filter="url(#glowFilt)"/>
+      <circle cx="190" cy="85" r="4" fill="#ffffff"/>
+      <circle cx="285" cy="150" r="4" fill="#00f6ff"/>
+      <circle cx="260" cy="270" r="4" fill="#c084fc"/>
+      <circle cx="140" cy="285" r="4" fill="#00ff9d"/>
+      <circle cx="95" cy="160" r="4" fill="#ffd700"/>
+    </g>
+
+    <!-- Core Center Hub -->
+    <circle cx="190" cy="195" r="16" fill="#0b1b2d" stroke="#00f6ff" stroke-width="2" filter="url(#glowFilt)"/>
+    <circle cx="190" cy="195" r="6" fill="#00ff9d"/>
+
+    <!-- Radar Floating Labels -->
+    <text x="190" y="68" font-family="'Courier New', monospace" font-size="10" font-weight="700" fill="#00f6ff" text-anchor="middle">CORE (C++/JAVA)</text>
+    <text x="315" y="155" font-family="'Courier New', monospace" font-size="10" font-weight="700" fill="#c084fc" text-anchor="middle">ANDROID/KOTLIN</text>
+    <text x="280" y="305" font-family="'Courier New', monospace" font-size="10" font-weight="700" fill="#00ff9d" text-anchor="middle">MERN &amp; NEXT.JS</text>
+    <text x="110" y="315" font-family="'Courier New', monospace" font-size="10" font-weight="700" fill="#ffd700" text-anchor="middle">DATA &amp; CLOUD</text>
+    <text x="75" y="150" font-family="'Courier New', monospace" font-size="10" font-weight="700" fill="#ff007f" text-anchor="middle">AI &amp; GEO-APIs</text>
+  </g>
+
+  <!-- ==================== RIGHT: SKILL METRICS & TELEMETRY ==================== -->
+  <g transform="translate(420, 80)">
+    
+    <!-- CARD 1: PROGRAMMING LANGUAGES -->
+    <g transform="translate(0, 0)">
+      <rect width="360" height="175" rx="14" fill="url(#glassCard)" stroke="#1a4669" stroke-width="1"/>
+      <text x="18" y="26" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="900" fill="#00f6ff" letter-spacing="1">
+        ⚡ PROGRAMMING LANGUAGES
+      </text>
+
+      <!-- Bar 1: C++ / C -->
+      <g transform="translate(18, 48)">
+        <text x="0" y="0" font-family="'Courier New', monospace" font-size="11" fill="#ffffff">C++ / C (Algorithms &amp; Systems)</text>
+        <text x="320" y="0" font-family="'Courier New', monospace" font-size="11" font-weight="700" fill="#00f6ff" text-anchor="end">95%</text>
+        <rect x="0" y="6" width="320" height="6" rx="3" fill="#0d1b2a"/>
+        <rect x="0" y="6" width="304" height="6" rx="3" fill="url(#neonCyanBlue)"/>
+      </g>
+
+      <!-- Bar 2: Kotlin & Java -->
+      <g transform="translate(18, 88)">
+        <text x="0" y="0" font-family="'Courier New', monospace" font-size="11" fill="#ffffff">Kotlin &amp; Java (Android &amp; OOP)</text>
+        <text x="320" y="0" font-family="'Courier New', monospace" font-size="11" font-weight="700" fill="#c084fc" text-anchor="end">92%</text>
+        <rect x="0" y="6" width="320" height="6" rx="3" fill="#0d1b2a"/>
+        <rect x="0" y="6" width="294" height="6" rx="3" fill="url(#neonPurplePink)"/>
+      </g>
+
+      <!-- Bar 3: Python & JavaScript -->
+      <g transform="translate(18, 128)">
+        <text x="0" y="0" font-family="'Courier New', monospace" font-size="11" fill="#ffffff">Python &amp; JavaScript (ES6+/Next)</text>
+        <text x="320" y="0" font-family="'Courier New', monospace" font-size="11" font-weight="700" fill="#ffd700" text-anchor="end">90%</text>
+        <rect x="0" y="6" width="320" height="6" rx="3" fill="#0d1b2a"/>
+        <rect x="0" y="6" width="288" height="6" rx="3" fill="url(#neonAmberGold)"/>
+      </g>
+    </g>
+
+    <!-- CARD 2: WEB & CLOUD ARCHITECTURE -->
+    <g transform="translate(385, 0)">
+      <rect width="365" height="175" rx="14" fill="url(#glassCard)" stroke="#1a4669" stroke-width="1"/>
+      <text x="18" y="26" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="900" fill="#00ff9d" letter-spacing="1">
+        🌐 FULL-STACK &amp; WEB PLATFORMS
+      </text>
+
+      <!-- Bar 1: React.js & Next.js -->
+      <g transform="translate(18, 48)">
+        <text x="0" y="0" font-family="'Courier New', monospace" font-size="11" fill="#ffffff">React.js, Next.js &amp; HTML5/CSS3</text>
+        <text x="325" y="0" font-family="'Courier New', monospace" font-size="11" font-weight="700" fill="#00ff9d" text-anchor="end">94%</text>
+        <rect x="0" y="6" width="325" height="6" rx="3" fill="#0d1b2a"/>
+        <rect x="0" y="6" width="305" height="6" rx="3" fill="url(#neonGreenEmerald)"/>
+      </g>
+
+      <!-- Bar 2: Socket.IO & REST APIs -->
+      <g transform="translate(18, 88)">
+        <text x="0" y="0" font-family="'Courier New', monospace" font-size="11" fill="#ffffff">Socket.IO &amp; High-Throughput REST</text>
+        <text x="325" y="0" font-family="'Courier New', monospace" font-size="11" font-weight="700" fill="#00f6ff" text-anchor="end">91%</text>
+        <rect x="0" y="6" width="325" height="6" rx="3" fill="#0d1b2a"/>
+        <rect x="0" y="6" width="295" height="6" rx="3" fill="url(#neonCyanBlue)"/>
+      </g>
+
+      <!-- Bar 3: Leaflet & Geolocation APIs -->
+      <g transform="translate(18, 128)">
+        <text x="0" y="0" font-family="'Courier New', monospace" font-size="11" fill="#ffffff">Leaflet GIS &amp; Google Maps API</text>
+        <text x="325" y="0" font-family="'Courier New', monospace" font-size="11" font-weight="700" fill="#c084fc" text-anchor="end">88%</text>
+        <rect x="0" y="6" width="325" height="6" rx="3" fill="#0d1b2a"/>
+        <rect x="0" y="6" width="286" height="6" rx="3" fill="url(#neonPurplePink)"/>
+      </g>
+    </g>
+
+    <!-- CARD 3: ANDROID & MOBILE ENGINEERING -->
+    <g transform="translate(0, 190)">
+      <rect width="360" height="175" rx="14" fill="url(#glassCard)" stroke="#1a4669" stroke-width="1"/>
+      <text x="18" y="26" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="900" fill="#c084fc" letter-spacing="1">
+        📱 ANDROID &amp; NATIVE SYSTEMS
+      </text>
+
+      <g transform="translate(18, 48)">
+        <text x="0" y="0" font-family="'Courier New', monospace" font-size="11" fill="#ffffff">Android SDK &amp; Lifecycle Architecture</text>
+        <text x="320" y="0" font-family="'Courier New', monospace" font-size="11" font-weight="700" fill="#c084fc" text-anchor="end">94%</text>
+        <rect x="0" y="6" width="320" height="6" rx="3" fill="#0d1b2a"/>
+        <rect x="0" y="6" width="300" height="6" rx="3" fill="url(#neonPurplePink)"/>
+      </g>
+
+      <g transform="translate(18, 88)">
+        <text x="0" y="0" font-family="'Courier New', monospace" font-size="11" fill="#ffffff">Jetpack Compose &amp; XML Layouts</text>
+        <text x="320" y="0" font-family="'Courier New', monospace" font-size="11" font-weight="700" fill="#00ff9d" text-anchor="end">90%</text>
+        <rect x="0" y="6" width="320" height="6" rx="3" fill="#0d1b2a"/>
+        <rect x="0" y="6" width="288" height="6" rx="3" fill="url(#neonGreenEmerald)"/>
+      </g>
+
+      <g transform="translate(18, 128)">
+        <text x="0" y="0" font-family="'Courier New', monospace" font-size="11" fill="#ffffff">SMS Manager &amp; Background Services</text>
+        <text x="320" y="0" font-family="'Courier New', monospace" font-size="11" font-weight="700" fill="#00f6ff" text-anchor="end">92%</text>
+        <rect x="0" y="6" width="320" height="6" rx="3" fill="#0d1b2a"/>
+        <rect x="0" y="6" width="294" height="6" rx="3" fill="url(#neonCyanBlue)"/>
+      </g>
+    </g>
+
+    <!-- CARD 4: DATABASES & DEV TOOLS -->
+    <g transform="translate(385, 190)">
+      <rect width="365" height="175" rx="14" fill="url(#glassCard)" stroke="#1a4669" stroke-width="1"/>
+      <text x="18" y="26" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="900" fill="#ffd700" letter-spacing="1">
+        🛠️ DATABASES, CLOUD &amp; DEVOPS
+      </text>
+
+      <g transform="translate(18, 48)">
+        <text x="0" y="0" font-family="'Courier New', monospace" font-size="11" fill="#ffffff">MongoDB Atlas &amp; Firebase Cloud</text>
+        <text x="325" y="0" font-family="'Courier New', monospace" font-size="11" font-weight="700" fill="#ffd700" text-anchor="end">93%</text>
+        <rect x="0" y="6" width="325" height="6" rx="3" fill="#0d1b2a"/>
+        <rect x="0" y="6" width="302" height="6" rx="3" fill="url(#neonAmberGold)"/>
+      </g>
+
+      <g transform="translate(18, 88)">
+        <text x="0" y="0" font-family="'Courier New', monospace" font-size="11" fill="#ffffff">PostgreSQL &amp; MySQL RDBMS</text>
+        <text x="325" y="0" font-family="'Courier New', monospace" font-size="11" font-weight="700" fill="#00f6ff" text-anchor="end">89%</text>
+        <rect x="0" y="6" width="325" height="6" rx="3" fill="#0d1b2a"/>
+        <rect x="0" y="6" width="289" height="6" rx="3" fill="url(#neonCyanBlue)"/>
+      </g>
+
+      <g transform="translate(18, 128)">
+        <text x="0" y="0" font-family="'Courier New', monospace" font-size="11" fill="#ffffff">Git, GitHub &amp; CI/CD Workflows</text>
+        <text x="325" y="0" font-family="'Courier New', monospace" font-size="11" font-weight="700" fill="#00ff9d" text-anchor="end">95%</text>
+        <rect x="0" y="6" width="325" height="6" rx="3" fill="#0d1b2a"/>
+        <rect x="0" y="6" width="308" height="6" rx="3" fill="url(#neonGreenEmerald)"/>
+      </g>
+    </g>
+  </g>
+</svg>
