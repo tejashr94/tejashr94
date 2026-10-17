@@ -10,12 +10,16 @@ on:
       - master
       - main
 
+# The default GITHUB_TOKEN is read-only unless permissions are granted.
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Generate Contribution Snake SVG
         uses: Platane/snk@v3
@@ -27,7 +31,7 @@ jobs:
             dist/github-contribution-grid-snake-cyber.svg?palette=github-dark&color_snake=#ff007f&color_dots=#0a192f,#00599c,#00f6ff,#7928ca,#ff007f
 
       - name: Deploy to Output Branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
+        uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
           build_dir: dist
